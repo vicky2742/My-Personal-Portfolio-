@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio |This is my personal Portfolio|</title>
+    <link rel="stylesheet" href="./style sheet/style.css" />
+    <link rel="stylesheet" href="./style sheet/responsiv.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/0b7a17eedf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- <-----------------------NAVIGATION-BAR------------------------>
+
+    <div class="navigation">
+      <nav id="navbar " class="header">
+        <div class="logo">
+          <img src="./image/logo-4.png" alt="Logo not found" />
+        </div>
+
+        <ul id="sidemenu">
+          <li>
+            <a href="#home" class="active">
+              <i class="fa-solid fa-house icon-5"></i> Home</a
+            >
+          </li>
+
+          <li>
+            <a href="#about">
+              <i class="fa-solid fa-address-card icon-5"></i>About</a
+            >
+          </li>
+
+          <!-- <li><a href="#hero"><i class="fa-regular fa-brackets-curly"></i> Skills</a></li> -->
+          <li>
+            <a href="#services">
+              <i class="fa-solid fa-gears icon-5"></i>Services</a
+            >
+          </li>
+          <li>
+            <a href="#portfolio">
+              <i class="fa-regular fa-images icon-5"></i>Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="#contact">
+              <i class="fa-solid fa-paper-plane icon-5"></i>Contact Me</a
+            >
+          </li>
+
+          <i
+            class="fa-sharp fa-solid fa-circle-xmark hide"
+            onclick="closemenu()"
+          ></i>
+          <!--cross icon-->
+        </ul>
+        <i class="fa-solid fa-bars hide" onclick="openmenu()"></i
+        ><!--menu icon-->
+      </nav>
+    </div>
+
+    <!-- <-----------------------HEADER-SECTION----------------------->
+
+    <header id="home">
+      <div class="container part header-section header-text">
+        <div class="header-left">
+          <h1>Hi, I'm <span>Vicky</span></h1>
+          <p id="p-1">Frontend Developer</p>
+          <p id="p-2">
+            I'm Vicky , a second year student pursuing bachelors in computer
+            science and engineering with specialisation in artifical
+            intelligence and machine learning and I believe in "face the
+            failure, until the failure fails to face you".
+          </p>
+          <div class="btn-box">
+            <a href="#cv">Download CV</a>
+            <a href="#contact">Let's Talk</a>
+          </div>
+        </div>
+        <div class="header-right">
+          <img src="./image/photo-.png" alt="Left Image" />
+        </div>
+        <span class="home-img"></span>
+      </div>
+    </header>
+
+    <!-- ----------------------- ABOUT-SECTION----------------------- -->
+
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./image/bg-2.png" alt="image not found" />
+            <!-- <img src="./assests/user.png" alt="image not found" /> -->
+          </div>
+          <div class="about-col-2">
+            <h2 class="sub-title">About Me</h2>
+            <p>
+              An enthusiastic fresher with highly motivated and leadership
+              skills having bachelors of engineering degree in Computer Science
+              & Engineering at SRMIST Delhi-NCR Campus, Ghaziabad. Highly
+              motivated and eager to learn new things. Always willing to
+              innovate the new things which can improve the existing technology.
+              I am passionate about Front-End Web Development. Also interested
+              in Full Stack Web Development.
+            </p>
+            <h3>My Career Objective :</h3>
+            <p>
+              To obtain a creative and challenging position in an organization
+              that gives me an opportunity for self improvement and leadership,
+              while contributing to the symbolic growth of the organization with
+              my technical, innovative and creative skills.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Programming Language :</span><br />C , C++ , Python
+                </li>
+                <li>
+                  <span>Web Development :</span><br />Html , Css , JavaScript
+                </li>
+                <li><span>Others :</span><br />DSA , OOPS</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>--</span><br />--</li>
+                <li><span>--</span><br />--</li>
+                <li><span>--</span><br />--</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2021</span><br />SRM Institute of Science and Technology
+                  (College)
+                </li>
+                <li>
+                  <span>2020</span><br />Ramjas Sr. Sec. School No-5
+                  (Intermediate)
+                </li>
+                <li>
+                  <span>2018</span><br />
+                  Ramjas Sr. Sec. School No-5 (High School)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------------------Education Timeline section---------------------- -->
+
+    <section class="timeline">
+      <h3 class="heading">Education Timeline</h3>
+
+      <div class="container container-2">
+        <ul>
+          <li>
+            <h3 class="title">College</h3>
+            <p>
+              I am pursuing Computer Science and Engineering with specialization
+              in Artificial Intelligence and Machine Learning at SRM Institute
+              of Science and Technology.
+            </p>
+
+            <span class="circle"></span>
+            <span class="date">September 2021</span>
+          </li>
+          <li>
+            <h3 class="title">Intermediate</h3>
+            <p>
+              I have completed my Intermediate from Ramjas Senior Secondary
+              School, Karol Bagh, Delhi, CBSE Board.
+            </p>
+
+            <span class="circle"></span>
+            <span class="date">July 2020</span>
+          </li>
+          <li>
+            <h3 class="title">High school</h3>
+            <p>
+              I have completed my High School from Ramjas Senior Secondary
+              School, Karol Bagh, Delhi, CBSE Board.
+            </p>
+
+            <span class="circle"></span>
+            <span class="date">May 2018</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ----------------------My Skills----------------- -->
+
+    <section class="hero">
+      <h3 class="heading-1">My Skills</h3>
+      <div class="container container-2 flex">
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>90 <span>%</span></h2>
+              </div>
+            </div>
+            <h2 class="text">Html</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>80 <span>%</span></h2>
+              </div>
+            </div>
+            <h2 class="text">Css</h2>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="percent">
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70"></circle>
+              </svg>
+              <div class="number">
+                <h2>60 <span>%</span></h2>
+              </div>
+            </div>
+            <h2 class="text">Javascript</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- --------------------services--------------------- -->
+
+    <section id="services">
+      <div class="container">
+        <h2 class="sub-title">My Services</h2>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Design</h3>
+            <p>
+              Very proficient in the field of Front-End Web Development.
+              Creating some unique and innovative websites using HTML, CSS and
+              JavaScript with by own ideas that will attract the users.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-solid fa-camera"></i>
+            <h3>Photography</h3>
+            <p>
+              I love nature. I can click some beautiful and attractive pictures
+              on nature and daily lifestyle.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h3>App Design</h3>
+            <p>
+              Creating some unique and innovative app design with by own ideas
+              that will attract the users.
+            </p>
+            <!-- <a href="#">Learn more</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- -------------------Portfolio----------------- -->
+
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="sub-title">My Work</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="./image/work-1.png" alt="image not found" />
+            <div class="layer">
+              <h3>MY-PORTFOLIO-GALLERY</h3>
+              <p>
+                “A good approach to writing about your own photographs is to
+                write around them instead of about them. As I noted earlier,
+                your viewers aren’t blind, so don’t tell them what they see.
+                Don’t tell them what you want them to see, either. If someone
+                doesn’t see that, but something else – then what? Do you want to
+                limit what people can get out of your pictures?
+              </p>
+              <a
+                href="https://vicky2742.github.io/My-Portfolio-Gallery/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/work-2.png" alt="image not found" />
+            <div class="layer">
+              <h3>MUSIC-PLAYER</h3>
+              <p>
+                Hardware or software that plays audio files encoded in MP3 and
+                other audio formats. On the software side, applications that
+                reside in the user's computer, such as iTunes, Windows Media
+                Player and RealPlayer, are used to organize a music collection,
+                play audio files and rip music from a CD. Software players may
+                also provide access to Internet radio stations and other
+                streaming audio sites (see media player).
+              </p>
+              <a
+                href="https://vicky2742.github.io/Music-Player/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/work-3.png" alt="image not found" />
+            <div class="layer">
+              <h3>CLONE WEBSITE (usabilityhub.com)</h3>
+              <p>
+                UsabilityHub is a remote user research platform that takes the
+                guesswork out of design decisions by validating them with real
+                users.
+              </p>
+              <a
+                href="https://vicky2742.github.io/clone-website/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" target="_blank" class="btn">See more</a>
+      </div>
+    </section>
+
+    <!-- -----------------Contact--------------------- -->
+
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h3 class="sub-title">Contact Me</h3>
+            <p><i class="fa-solid fa-paper-plane"></i>vickyjmh5@gamil.com</p>
+            <p><i class="fa-solid fa-phone"></i>8700038160</p>
+            <div class="social-icons">
+              <a href="#" target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com/_.vi.cky_/" target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/vicky-369194221/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/vicky2742" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              id="cv"
+              href="./image/CV.pdf"
+              download
+              class="btn btn2"
+              target="_blank"
+              >Download CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form
+              action="https://formsubmit.co/20d6ddc931a958ab250a279a5e2dd528"
+              target="_blank"
+              method="POST"
+            >
+              <!-- honeypot -->
+              <input type="text" name="_honey" style="display: none" />
+              <!-- disable captcha -->
+              <input type="hidden" name="-captcha" value="false" />
+
+              <input type="hidden" name="_next" value="" />
+
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <input
+                type="phone"
+                name="Number"
+                placeholder="Phone Number"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER-SECTION  -->
+
+    <footer class="copyright">
+      <p>An enthusiastic Future Developer. <i class="fa-solid fa-heart"></i></p>
+      <p>Copyright © 2023 Vicky. All rights reserved</p>
+    </footer>
+
+    <!-- -----------------JS-file-Link------------------- -->
+
+    <script src="index.js"></script>
+  </body>
+</html>
