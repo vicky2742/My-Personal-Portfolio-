@@ -51,3 +51,41 @@ window.addEventListener("scroll", function () {
 //     })
 //     .catch((error) => console.error("Error!", error.message));
 // });
+
+// theme switch
+const toogleswitch = document.querySelector(".toogleswitch");
+toogleswitch.addEventListener("click", function () {
+  document.body.classList.toggle("switch");
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let menu = document.querySelector(".toggle");
+let navigation = document.querySelector(".navigation");
+menu.onclick = function () {
+  menu.classList.toggle("active");
+  navigation.classList.toggle("active");
+};
+
+let list = document.querySelectorAll(".list");
+for (let i = 0; i < list.length; i++) {
+  list[i].onclick = function () {
+    let j = 0;
+    while (j < list.length) {
+      list[j++].className = "list";
+    }
+    list[i].className = "list active";
+  };
+}

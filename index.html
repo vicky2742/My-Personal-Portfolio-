@@ -6,31 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio |This is my personal Portfolio|</title>
     <link rel="stylesheet" href="./style sheet/style.css" />
+    <link rel="stylesheet" href="./style sheet/new.css" />
     <link rel="stylesheet" href="./style sheet/responsiv.css" />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="./image/v.png" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" /> -->
     <script
       src="https://kit.fontawesome.com/0b7a17eedf.js"
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="switch">
     <!-- <-----------------------NAVIGATION-BAR------------------------>
 
     <div class="navigation">
@@ -69,14 +57,18 @@
             >
           </li>
 
+          <!--cross icon-->
           <i
             class="fa-sharp fa-solid fa-circle-xmark hide"
             onclick="closemenu()"
           ></i>
-          <!--cross icon-->
         </ul>
-        <i class="fa-solid fa-bars hide" onclick="openmenu()"></i
-        ><!--menu icon-->
+        <div class="toogleswitch">
+          <i class="fa-solid fa-sun d"></i>
+          <i class="fa-solid fa-moon d"></i>
+        </div>
+        <!--menu icon-->
+        <i class="fa-solid fa-bars hide" onclick="openmenu()"></i>
       </nav>
     </div>
 
@@ -88,7 +80,7 @@
           <h1>Hi, I'm <span>Vicky</span></h1>
           <p id="p-1">Frontend Developer</p>
           <p id="p-2">
-            I'm Vicky , a second year student pursuing bachelors in computer
+            I'm Vicky , a Third year student pursuing bachelors in computer
             science and engineering with specialisation in artifical
             intelligence and machine learning and I believe in "face the
             failure, until the failure fails to face you".
@@ -144,7 +136,8 @@
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li>
-                  <span>Programming Language :</span><br />C , C++ , Python
+                  <span>Programming Language :</span><br />Java , C , C++ ,
+                  Python
                 </li>
                 <li>
                   <span>Web Development :</span><br />Html , Css , JavaScript
@@ -317,19 +310,87 @@
         <h2 class="sub-title">My Work</h2>
         <div class="work-list">
           <div class="work">
+            <img
+              src="./image/WhatsApp Image 2023-06-28 at 19.09.19.jpg"
+              alt="image not found"
+            />
+            <div class="layer">
+              <h3>Personal-Portfolio</h3>
+              <p>
+                A portfolio site is an extension of a freelancer’s (or
+                company’s) résumé. It provides a convenient way for potential
+                clients to view your work.
+
+                <!-- while also allowing you to expand on your skills and services. 
+                This, however, isn’t the ultimate purpose of a portfolio website. -->
+              </p>
+              <a
+                href="https://github.com/vicky2742/My-Personal-Portfolio-"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/memory game.png" alt="image not found" />
+            <div class="layer">
+              <h3>Memory Game</h3>
+              <p>
+                Memory games are games that help improve memory and
+                concentration. There are many types of memory games such as
+                memory card,concentration and memory testing games.
+              </p>
+              <a href="https://github.com/vicky2742/Memory-Game" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/todo list.png" alt="image not found" />
+            <div class="layer">
+              <h3>Simple Todo List</h3>
+              <p>
+                You can use Todoist to organize your tasks by creating projects
+                and sub-projects. You can also add labels and filters to your
+                tasks to help you find them more easily.
+                <!-- Todoist also has a feature called “Karma” which tracks your productivity and gives you points for completing tasks on time2. -->
+              </p>
+              <a href="https://github.com/vicky2742/Todo-List" target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
             <img src="./image/work-1.png" alt="image not found" />
             <div class="layer">
-              <h3>MY-PORTFOLIO-GALLERY</h3>
+              <h3>My Portfolio gallary</h3>
               <p>
                 “A good approach to writing about your own photographs is to
                 write around them instead of about them. As I noted earlier,
                 your viewers aren’t blind, so don’t tell them what they see.
-                Don’t tell them what you want them to see, either. If someone
+                <!-- Don’t tell them what you want them to see, either. If someone
                 doesn’t see that, but something else – then what? Do you want to
-                limit what people can get out of your pictures?
+                limit what people can get out of your pictures? -->
               </p>
               <a
                 href="https://vicky2742.github.io/My-Portfolio-Gallery/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="./image/stopwatch.png" alt="image not found" />
+            <div class="layer">
+              <h3>Memory Game</h3>
+              <p>
+                A stopwatch is a timepiece designed to measure the amount of
+                time elapsed from a particular time when activated and when the
+                piece is deactivated.
+                <!-- A timer is a timepiece designed to measure a certain period of time, such as a cooking time or a deadline. -->
+              </p>
+              <a
+                href="https://github.com/vicky2742/Stopwatch-Timer"
                 target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -341,12 +402,13 @@
               <h3>MUSIC-PLAYER</h3>
               <p>
                 Hardware or software that plays audio files encoded in MP3 and
-                other audio formats. On the software side, applications that
+                other audio formats.
+                <!--On the software side, applications that
                 reside in the user's computer, such as iTunes, Windows Media
                 Player and RealPlayer, are used to organize a music collection,
                 play audio files and rip music from a CD. Software players may
                 also provide access to Internet radio stations and other
-                streaming audio sites (see media player).
+                streaming audio sites (see media player). -->
               </p>
               <a
                 href="https://vicky2742.github.io/Music-Player/"
@@ -365,7 +427,7 @@
                 users.
               </p>
               <a
-                href="https://vicky2742.github.io/clone-website/"
+                href="https://github.com/vicky2742/clone-website"
                 target="_blank"
                 ><i class="fa-solid fa-arrow-up-right-from-square"></i
               ></a>
@@ -383,8 +445,8 @@
         <div class="row">
           <div class="contact-left">
             <h3 class="sub-title">Contact Me!</h3>
-            <p><i class="fa-solid fa-paper-plane"></i>vickyjmh5@gamil.com</p>
-            <p><i class="fa-solid fa-phone"></i>8700038160</p>
+            <p><i class="fa-solid fa-paper-plane"></i>vickyjmh5@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+91 8700038160</p>
             <div class="social-icons">
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-facebook"></i
@@ -403,7 +465,7 @@
             </div>
             <a
               id="cv"
-              href="./image/CV.pdf"
+              href="./image/Resume.pdf"
               download
               class="btn btn2"
               target="_blank"
@@ -417,19 +479,21 @@
               method="POST"
             >
               <!-- honeypot -->
-              <input type="text" name="_honey" style="display: none;" />
+              <input type="text" name="_honey" style="display: none" />
               <!-- disable captcha -->
               <input type="hidden" name="_captcha" value="false" />
 
-<<<<<<< HEAD
               <input
                 type="hidden"
                 name="_next"
                 value="https://vicky2742.github.io/My-Personal-Portfolio-/success.html"
               />
-=======
-              <input type="hidden" name="_next" value="https://vicky2742.github.io/My-Personal-Portfolio-/success.html" />
->>>>>>> 59cc2e8c472de92b3a4bec382fae0daac78f4875
+
+              <input
+                type="hidden"
+                name="_next"
+                value="https://vicky2742.github.io/My-Personal-Portfolio-/success.html"
+              />
 
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
