@@ -2,20 +2,82 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
 
+::-webkit-scrollbar {
+  width: 5px;
+  background: rgb(20, 21, 23);
+}
+::-webkit-scrollbar-thumb {
+  background: #ff004f;
+  border-radius: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+/* <---------------dark mode-----------------> */
+
 body {
-  background-color: black;
+  /* *****Light theme**** */
+  background: hwb(220 8% 91%);
   color: white;
+  transition: 1s;
 }
 
+.switch {
+  /* *****Dark theme****** */
+
+  background: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.toogleswitch {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toogleswitch .d {
+  position: absolute;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 25px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.fa-sun {
+  display: none;
+  color: white;
+}
+.fa-moon {
+  width: 45px;
+  height: 45px;
+  background-color: rgb(20, 21, 23);
+  border-radius: 15px;
+}
+.switch .fa-sun {
+  display: block;
+}
+
+.switch .fa-moon {
+  display: none;
+}
+
+  .toogleswitch:hover{
+background-color: #00ff43;
+}
 /* -----------------NAVIGATION-BAR-SECTION--------------------------------- */
 
 .logo {
@@ -27,7 +89,7 @@ body {
 
 .logo img {
   width: 90%;
-  height: 65px;
+  height: 55px;
   border-radius: 40%;
   margin: -5px -11px;
   object-fit: contain;
@@ -41,8 +103,8 @@ body {
   top: 0;
   right: -25px;
   width: 100%;
-  height: 90%;
-  background: black;
+  height: 100%;
+  background:black;
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
 }
@@ -55,6 +117,10 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 10000;
+  box-shadow: rgba(157, 157, 157, 0.2) 0px 10px 10px;
+  background-color: black;
+  margin-top: 10px;
+  border-radius: 30px;
 }
 
 nav ul li {
@@ -68,6 +134,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 15px;
   position: relative;
+  right: 60px;
 }
 
 nav ul li a::after {
@@ -92,7 +159,7 @@ nav ul:hover li a {
 
 nav ul li a:hover::after,
 nav ul li a.active {
-  color: #30edf4;
+  color: #ff004f;
 }
 
 nav ul:hover li a:not(:hover) {
@@ -129,6 +196,7 @@ nav ul li a .icon-5:hover {
   top: 0;
   transition: all 0.4s ease;
   box-shadow: 0px 1px 15px rgb(0 0 0 / 10%);
+  box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
   z-index: 100000;
 }
 
@@ -137,7 +205,7 @@ nav ul li a .icon-5:hover {
 header {
   background-size: cover;
   background-position: center;
-  padding: 80px 0;
+  padding: 100px 0;
 }
 
 .part {
@@ -315,7 +383,7 @@ header {
 .timeline {
   width: 100%;
   height: auto;
-  background-color: #080808;
+  /* background-color: #080808; */
   font-family: poppins;
   padding: 50px 0;
   display: grid;
@@ -475,7 +543,6 @@ ul li .date {
 .hero {
   width: 100%;
   height: auto;
-  /* background-color: #080808; */
   background-color: #101010;
   font-family: poppins;
   padding: 50px 0;
@@ -691,7 +758,7 @@ svg circle:nth-child(2) {
   transform: translateY(-10px);
 }
 
-/* ----------portfolio----------- */
+/* ----------portfolio/My Work----------- */
 
 #portfolio {
   background: #101010;
@@ -744,7 +811,7 @@ svg circle:nth-child(2) {
 
 .layer a {
   margin-top: 20px;
-  color: #ff004f ;
+  color: #ff004f;
   text-decoration: none;
   font-size: 18px;
   line-height: 60px;
@@ -776,7 +843,10 @@ svg circle:nth-child(2) {
 }
 
 .btn:hover {
-  background: #ff004f;
+  /* background: #ff004f; */
+  background: radial-gradient(#ff004f, #000000);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 32px -1px #ff004f;
 }
 
 /* -------------------contact------------ */
@@ -811,7 +881,7 @@ svg circle:nth-child(2) {
 
 .btn.btn2 {
   display: inline-block;
-  background: #ff004f;
+  background: #bb164a;
 }
 
 .contact-right {
@@ -845,8 +915,9 @@ form .btn2 {
 
 .btn2:hover {
   color: rgb(255, 255, 255);
-  background-color: rgb(0, 0, 0);
-  border: 2px solid #ff004f;
+  background: radial-gradient(#ff004f, #000);
+  transform: translateY(-5px);
+  box-shadow: 0px 0px 32px -1px #ff004f;
 }
 
 #msg {
@@ -861,7 +932,7 @@ form .btn2 {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: #262626;
+  background: #101010;
   font-weight: 300;
   margin-top: 50px;
 }
@@ -908,7 +979,7 @@ h3 {
   right: 0;
   width: 100%;
   height: 200%;
-  background: black;
+  background:black;
   animation: showRight 1s ease forwards;
   animation-delay: 3s;
   z-index: 2;
@@ -958,7 +1029,7 @@ h3 {
   left: 0;
   width: 0;
   height: 100%;
-  background: black;
+  background:black;
   z-index: -1;
   transition: 0.5s;
 }
@@ -983,11 +1054,12 @@ h3 {
 
 .home-img {
   position: absolute;
-  top: 100px;
+  top: 125px;
   right: 30px;
-  width: 506px;
+  width: 514px;
   height: 480px;
   background: transparent;
+  border-radius: 110px;
   /* border: 2px solid red; */
   transition: 0.5s;
   animation: maniActiveHover 0.1s forwards;
@@ -996,7 +1068,7 @@ h3 {
 }
 
 .home-img:hover {
-  background: rgb(0, 0, 0);
+  background: black;
   opacity: 0.5;
 }
 
@@ -1013,10 +1085,9 @@ h3 {
   z-index: 100;
 }
 
-
-
-
-
-
+input[type="checkbox"],
+.hamburger-lines {
+  display: none;
+}
 
 

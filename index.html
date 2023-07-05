@@ -8,15 +8,22 @@
     <link rel="stylesheet" href="./style sheet/style.css" />
     <link rel="stylesheet" href="./style sheet/new.css" />
     <link rel="stylesheet" href="./style sheet/responsiv.css" />
-    <link rel="shortcut icon" href="./image/v.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./image/v.png" type="image/x-icon" />
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" /> -->
-    <script
+    <!-- <script
       src="https://kit.fontawesome.com/0b7a17eedf.js"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body class="switch">
     <!-- <-----------------------NAVIGATION-BAR------------------------>
@@ -27,7 +34,18 @@
           <img src="./image/logo-4.png" alt="Logo not found" />
         </div>
 
-        <ul id="sidemenu">
+        <!-- *******hamburger-Menu-Bar********* -->
+
+        <input type="checkbox" name="" id="" />
+        <div class="hamburger-lines">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </div>
+
+        <!-- ******navigation links****** -->
+
+        <ul id="sidemenu" class="menu-items">
           <li>
             <a href="#home" class="active">
               <i class="fa-solid fa-house icon-5"></i> Home</a
@@ -58,17 +76,20 @@
           </li>
 
           <!--cross icon-->
-          <i
+          <!-- <i
             class="fa-sharp fa-solid fa-circle-xmark hide"
             onclick="closemenu()"
-          ></i>
+          ></i> -->
         </ul>
+
+        <!-- ******Theme Mode******* -->
+
         <div class="toogleswitch">
           <i class="fa-solid fa-sun d"></i>
           <i class="fa-solid fa-moon d"></i>
         </div>
         <!--menu icon-->
-        <i class="fa-solid fa-bars hide" onclick="openmenu()"></i>
+        <!-- <i class="fa-solid fa-bars hide" onclick="openmenu()"></i> -->
       </nav>
     </div>
 
