@@ -75,8 +75,8 @@ body {
   display: none;
 }
 
-  .toogleswitch:hover{
-background-color: #00ff43;
+.toogleswitch:hover {
+  background-color: #00ff43;
 }
 /* -----------------NAVIGATION-BAR-SECTION--------------------------------- */
 
@@ -104,7 +104,7 @@ background-color: #00ff43;
   right: -25px;
   width: 100%;
   height: 100%;
-  background:black;
+  background: black;
   animation: showRight 1s ease forwards;
   animation-delay: 0.4s;
 }
@@ -251,6 +251,29 @@ header {
   width: 500px;
 }
 
+.header-right {
+  /* padding: 2.5rem; */
+  /* filter: grayscale(1); */
+  transition: all 1s;
+  animation: scaleImage 5s linear infinite;
+}
+
+@keyframes scaleImage {
+  0% {
+    /* filter: grayscale(0); */
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+    /* filter: grayscale(1); */
+    /* box-shadow: 3px 3px 10px white; */
+  }
+  100% {
+    transform: scale(1);
+    /* filter: grayscale(0); */
+  }
+}
+
 .header-text {
   font-size: 30px;
 }
@@ -267,7 +290,7 @@ header {
 #p-1 {
   position: relative;
   font-family: "Roboto", sans-serif;
-  color: #4dd41c;
+  /* color: #4dd41c; */
   font-size: 50px;
 }
 #p-1::before {
@@ -278,8 +301,13 @@ header {
   width: 100%;
   height: 100%;
   background: black;
-  animation: showRight 1s ease forwards;
+  animation: showRight 1s forwards;
   animation-delay: 1.9s;
+}
+
+.role {
+  color: #4dd41c;
+  font-weight: 800;
 }
 
 #p-2 {
@@ -320,6 +348,7 @@ header {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
+  box-shadow: 0px 0px 15px;
 }
 
 .about-col-2 {
@@ -844,7 +873,7 @@ svg circle:nth-child(2) {
 
 .btn:hover {
   /* background: #ff004f; */
-  background: radial-gradient(#ff004f, #000000);
+  /* background: radial-gradient(#ff004f, #000000); */
   transform: translateY(-5px);
   box-shadow: 0px 0px 32px -1px #ff004f;
 }
@@ -880,10 +909,13 @@ svg circle:nth-child(2) {
 }
 
 .btn.btn2 {
+  padding: 14px 50px;
   display: inline-block;
   background: #bb164a;
 }
-
+.btn.btn2.y {
+  padding: 14px 25px;
+}
 .contact-right {
   flex-basis: 60%;
 }
@@ -903,6 +935,7 @@ form textarea {
   color: white;
   font-size: 18px;
   border-radius: 6px;
+  box-shadow: inset 0px 0px 5px 0px;
 }
 
 form .btn2 {
@@ -915,9 +948,8 @@ form .btn2 {
 
 .btn2:hover {
   color: rgb(255, 255, 255);
-  background: radial-gradient(#ff004f, #000);
   transform: translateY(-5px);
-  box-shadow: 0px 0px 32px -1px #ff004f;
+  box-shadow: 0px 0px 20px -1px #ff004f;
 }
 
 #msg {
@@ -925,7 +957,10 @@ form .btn2 {
   margin-top: -40px;
   display: block;
 }
-
+.v {
+  margin-right: 15px;
+  font-size: 22px;
+}
 /* footer-section */
 
 .copyright {
@@ -962,6 +997,55 @@ h3 {
   /* overflow: hidden; */
 }
 
+/* ---------------Contact-Icon---------- */
+
+.home-icon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  animation: showRight 1s ease forwards;
+  animation-delay: 2.5s;
+  z-index: 2;
+}
+.home-icon a {
+  box-shadow: 0 0 12px;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin-top: 30px;
+  border-radius: 50%;
+  color: white;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.home-icon a:hover {
+  color: black;
+  box-shadow: 0 0 12px;
+}
+.home-icon a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: white;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.home-icon a:hover::before {
+  width: 100%;
+}
+
 /* <-----------------Button-section--------------------> */
 
 .header-section .btn-box {
@@ -979,7 +1063,7 @@ h3 {
   right: 0;
   width: 100%;
   height: 200%;
-  background:black;
+  background: black;
   animation: showRight 1s ease forwards;
   animation-delay: 3s;
   z-index: 2;
@@ -1029,7 +1113,7 @@ h3 {
   left: 0;
   width: 0;
   height: 100%;
-  background:black;
+  background: black;
   z-index: -1;
   transition: 0.5s;
 }
@@ -1054,10 +1138,10 @@ h3 {
 
 .home-img {
   position: absolute;
-  top: 125px;
-  right: 30px;
-  width: 514px;
-  height: 480px;
+  top: 107px;
+  right: 10px;
+  width: 550px;
+  height: 520px;
   background: transparent;
   border-radius: 110px;
   /* border: 2px solid red; */
@@ -1089,5 +1173,3 @@ input[type="checkbox"],
 .hamburger-lines {
   display: none;
 }
-
-

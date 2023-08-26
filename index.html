@@ -9,14 +9,6 @@
     <link rel="stylesheet" href="./style sheet/new.css" />
     <link rel="stylesheet" href="./style sheet/responsiv.css" />
     <link rel="shortcut icon" href="./image/v.png" type="image/x-icon" />
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/android-chrome-192x192.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png" />
-    <link rel="manifest" href="/site.webmanifest" /> -->
-    <!-- <script
-      src="https://kit.fontawesome.com/0b7a17eedf.js"
-      crossorigin="anonymous"
-    ></script> -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -99,9 +91,9 @@
       <div class="container part header-section header-text">
         <div class="header-left">
           <h1>Hi, I'm <span>Vicky</span></h1>
-          <p id="p-1">Frontend Developer</p>
+          <p id="p-1"><span class="role"></span></p>
           <p id="p-2">
-            I'm Vicky , a Third year student pursuing bachelors in computer
+            I'm Vicky , a pre Final year student pursuing bachelors in computer
             science and engineering with specialisation in artifical
             intelligence and machine learning and I believe in "face the
             failure, until the failure fails to face you".
@@ -468,7 +460,7 @@
             <h3 class="sub-title">Contact Me!</h3>
             <p><i class="fa-solid fa-paper-plane"></i>vickyjmh5@gmail.com</p>
             <p><i class="fa-solid fa-phone"></i>+91 8700038160</p>
-            <div class="social-icons">
+            <div class="social-icons home-icon">
               <a href="#" target="_blank"
                 ><i class="fa-brands fa-facebook"></i
               ></a>
@@ -488,10 +480,10 @@
               id="cv"
               href="./image/Resume.pdf"
               download
-              class="btn btn2"
+              class="btn btn2 y"
               target="_blank"
-              >Download CV</a
-            >
+              >Download CV <i class="fa-solid fa-arrow-down v"></i
+            ></a>
           </div>
           <div class="contact-right">
             <form
@@ -534,7 +526,9 @@
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="submit" class="btn btn2">Submit</button>
+              <button type="submit" class="btn btn2">
+                <i class="fa-solid fa-paper-plane v"></i>Send
+              </button>
             </form>
             <span id="msg"></span>
           </div>
@@ -550,7 +544,8 @@
     </footer>
 
     <!-- -----------------JS-file-Link------------------- -->
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    ;
     <script src="index.js"></script>
   </body>
 </html>

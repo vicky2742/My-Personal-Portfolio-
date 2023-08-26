@@ -43,6 +43,7 @@
   }
 
   .toogleswitch .d {
+    display: block;
     width: 50px;
   }
 
